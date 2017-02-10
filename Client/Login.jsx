@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {history} from 'react-router';
+import {history, Link} from 'react-router';
 import FacebookLogin from 'react-facebook-login';
 
 class Login extends React.Component {
@@ -72,7 +72,7 @@ class Login extends React.Component {
               col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
             <form className="form-horizontal col-xs-8 col-xs-offset-2">
               <fieldset>
-                <button className='signIn btn btn-success' type='button' onClick={this.handleSubmit}>Enter Page!</button>
+                <button className='signIn btn btn-success' type='button'><Link to='/home'>Home</Link></button>
               </fieldset>
             </form>
           </div>
